@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Encriptador | Challenge</title>
+  </head>
+  <body>
+    <div id="aluraImagen">
+      <img src="./images/alura.svg" alt="Alura" />
+    </div>
+    <section id="options">
+      <textarea
+        name="txtSource"
+        id="sourceText"
+        placeholder="Ingrese el texto aqui"
+      ></textarea>
+      <div class="warningContainer">
+        <img src="./images/warning.svg" alt="Warning" />
+        <p>Solo letras minúsculas y sin acentos</p>
+      </div>
+      <div class="buttonsContainer">
+        <button id="btnEncrypt">Encriptar</button>
+        <button id="btnDecrypt">Desencriptar</button>
+      </div>
+    </section>
+    <section id="output">
+      <img src="./images/searching.svg" alt="searching" id="imgSearching"/>
+      <h2>Ningún mensaje fue encontrado</h2>
+      <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+      <h3 id="outputText"></h3>
+      <button id="btnCopy">Copiar</button>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
